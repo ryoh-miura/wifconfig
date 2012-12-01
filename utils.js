@@ -1,5 +1,5 @@
 /*
- * If run short of arguments items, following items fill `undefined' class. 
+ * If it runs short of arguments items, following items fill `undefined' class. 
  */
 function toStr(s) {
     if((typeof(s))=="undefined" || s.length == 0) {
