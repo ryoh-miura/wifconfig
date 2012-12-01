@@ -1,0 +1,18 @@
+What is this?
+================================
+
+This is a terminal network command like ifconfig which can handle the
+static or DHCP address. Currently I have tested on Windows XP and
+Vista.
+
+Yes, I know that I would not create this program if I saw the `netsh'
+command some years ago. But use it if you have any motivation for
+wmi-sample usage or remote-wmi capability.
+
+
+How to work
+================================
+
+The command use WMI technology and WSH in jscript only. Thererfore you
+need not install any other library or executable.
+
