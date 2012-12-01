@@ -24,7 +24,7 @@ c:\cscript wifconfig.js -h (ヘルプ)
 ネットワークインターフェースデバイスの表示
 ================================
 
-    c:\cscript netconf.js -D 
+    c:\cscript wifconfig.js -D 
     Index      MACAddress                  Description
     0xB  ...B2 A0 C9 64 BB FB ......1394 ネット アダプタ
     0x19 ...00 0D 0B 49 5E 99 ......Realtek RTL8169/8110 Family Gigabit Ethernet NIC
@@ -40,12 +40,12 @@ IP アドレスの割り当て(DHCP)
 ================================
 Index 0x19 のデバイスを dhcp に割り当てる場合は
 
-    c:\cscript 0x19 dhcp enable
+    c:\cscript wifconfig.js 0x19 dhcp enable
 
 とすることで可能です。また、ipconfig の renew や release も同様に
 
-    c:\cscript 0x19 dhcp renew
-    c:\cscript 0x19 dhcp release
+    c:\cscript wifconfig.js 0x19 dhcp renew
+    c:\cscript wifconfig.js 0x19 dhcp release
 
 となります。
 
@@ -58,7 +58,7 @@ static ipaddress を割り当てる時は以下のように行います。
 上の例は gateway や DNS に紐付いていないため、それらを割り当てたい場合
 は以下のようにします。
 
-    c:\cscript 0x19 static 192.168.1.100 netmask 255.255.255.128 gateway
+    c:\cscript wifconfig.js 0x19 static 192.168.1.100 netmask 255.255.255.128 gateway
     192.168.1.1 dns 192.168.1.251
 
 
