@@ -16,3 +16,4 @@ How to work
 The command use WMI technology and WSH in jscript only. Thererfore you
 need not install any other library or executable.
 
+
